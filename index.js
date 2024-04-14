@@ -13,9 +13,9 @@ function logActivity(msg) {
   const chat = msg.chat;
   const command = msg.text.toLowerCase();
 
-  console.log(`Aktivitas Penggunaan Bot Telegram`);
+  console.log(`Bot Usage Activities Telegram`);
   console.log(`• User ID: ${user.id}`);
-  console.log(`• Username: ${user.username || 'Tidak ada'}`);
+  console.log(`• Username: ${user.username || 'There isn't any'}`);
   console.log(`• Chat ID: ${chat.id}`);
   console.log(`• Perintah: ${command}`);
 }
@@ -53,11 +53,10 @@ bot.on('message', (msg) => {
         }
         // Menampilkan output stdout jika berhasil
         console.log(`stdout: ${stdout}`);
-        bot.sendMessage(chatId, 'Proses telah dimulai.');
+        bot.sendMessage(chatId, 'The process has started.');
       });
     } else {
       // Memberi tahu pengguna bahwa format pesan tidak benar
-      bot.sendMessage(chatId, 'Format pesan tidak benar. Gunakan format: /mix [url] [time] [thread] [rate]');
+      bot.sendMessage(chatId, The message format is incorrect. Use the format: /mix [url] [time] [thread] [rate]');The message format is incorrect. Use the format: /mix [url] [time] [thread] [rate]');
     }
-  }
-});
+  });
